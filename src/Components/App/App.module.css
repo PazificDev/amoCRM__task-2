@@ -1,0 +1,121 @@
+.root {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  background-color: #0E1014;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.root__redLight {
+  position: absolute;
+  top: 251px;
+  left: -102px;
+  width: 311px;
+  height: 311px;
+  border-radius: 311px;
+  opacity: 0.5;
+  background: #961A1A;
+  filter: blur(196px);
+}
+
+.root__purpleLight {
+  position: absolute;
+  top: -154px;
+  left: 602px;
+  width: 259px;
+  height: 259px;
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833AB4;
+  filter: blur(196px);
+}
+
+.root__redBall {
+  position: absolute;
+  top: 536px;
+  right: 540px;
+}
+
+.root__redBall_mobile {
+  display: none;
+  position: absolute;
+  top: 440px;
+  left: 10px;
+  filter: blur(10px);
+}
+
+.root__redBall_style_big {
+  position: absolute;
+  top: 72px;
+  left: 505px;
+  filter: blur(10px);
+}
+
+.root__purpleBall {
+  position: absolute;
+  top: 0px;
+  right: 493px;
+}
+
+.root__purpleBall_mobile {
+  display: none;
+  position: absolute;
+  top: 291px;
+  right: 0px;
+}
+
+.mainContent {
+  z-index: 100;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .mainContent {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .root__redLight {
+    top: 296px;
+    left: -55px;
+  }
+
+  .root__purpleLight {
+    top: 162px;
+    right: -197px;
+  }
+
+  .root__redBall_style_big {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .root__purpleBall {
+    display: none;
+  }
+
+  .root__redBall {
+    display: none;
+  }
+
+  .root__redBall_mobile {
+    display: block;
+  }
+
+  .root__purpleBall_mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .mainContent {
+    padding: 0;
+  }
+}
