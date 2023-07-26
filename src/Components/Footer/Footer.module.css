@@ -1,0 +1,237 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  margin-top: 55px;
+}
+
+.footer__info {
+  display: flex;
+}
+
+.footer__aboutCompany {
+  display: flex;
+  flex-direction: column;
+  margin-right: 98px;
+}
+
+.footer__infoTitle {
+  margin: 0 0 20px;
+  color: #656566;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.footer__aboutCompanyList {
+  width: 195px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__infoElement {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer__infoElement_partner {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer__infoElementLink {
+  color: #E4E5EA;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.footer__services {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 163px;
+}
+
+.footer__servicesList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 145px;
+  row-gap: 10px;
+  column-gap: 52px;
+}
+
+.footer__contacts {
+  width: 277px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer__contactsPhone {
+  color: #E4E5EA;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.footer__contactsSocials {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__contactsSocialsItem {
+  list-style-type: none;
+  width: 20px;
+  height: 20px;
+}
+
+.footer__socialButton {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+}
+
+.footer__contactsAdress {
+  width: 280px;
+  padding: 0;
+  margin: 20px 0 0;
+  color: #E4E5EA;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 5px;
+}
+
+.footer__allRightsReserved {
+  margin: 0;
+  padding: 0;
+  color: #E4E5EA;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__politicy {
+  margin: 0;
+  padding: 0;
+  color:#E4E5EA;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 1030px) {
+  .footer__info {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__contacts {
+    align-items: start;
+  }
+
+  .footer__copyright {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    margin: 0;
+    padding-top: 45px;
+    z-index: 100;
+    background-color: #0E1014;
+  }
+  .footer__info {
+    margin: 0 15px;
+  }
+
+  .footer__infoTitle {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+
+  .footer__services {
+    width: 290px;
+    margin: 0;
+  }
+
+  .footer__servicesList {
+    max-height: 160px;
+    column-gap: 28px;
+  }
+
+  .footer__infoElement {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .footer__infoElement_partner {
+    max-width: 180px;
+  }
+
+  .footer__infoElementLink {
+    font-size: 14px;
+  }
+
+  .footer__contactsPhone {
+    margin-bottom: 8px;
+  }
+
+  .footer__contactsAdress {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .footer__copyright {
+    align-items: start;
+    margin-left: 15px;
+  }
+}
